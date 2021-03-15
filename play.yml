@@ -1,0 +1,7 @@
+- hosts: aws
+  roles:
+  - httpd_webserver
+
+- hosts: load
+  roles:
+  - haproxy_loadbalancer
